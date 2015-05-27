@@ -14,4 +14,8 @@ public class AcceptCoinTester {
         AcceptCoin acceptor = new AcceptCoin();
         assertTrue("Acceptor accepts nickles", acceptor.accept("Nickle"));
     }
+    public void testacceptdimes(){
+        AcceptCoin acceptor = new AcceptCoin();
+        assertTrue("Acceptor accepts Dimes", acceptor.accept("Dimes"));
+    }
 }

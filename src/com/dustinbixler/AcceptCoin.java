@@ -7,8 +7,11 @@ public class AcceptCoin {
     public boolean accept(String coin){
         if (coin.equals("Nickle")){
             return true;
-        }else{
-            return false;
         }
+        if (coin.equals("Dime")){
+            return true;
+        }
+
+        return false;
     }
 }
