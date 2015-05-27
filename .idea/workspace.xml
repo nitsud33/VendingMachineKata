@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925b745c-95a0-4802-8d5a-784489a2ce09" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java" />
+      <change type="DELETED" beforePath="C:\Users\Dustin\IdeaProjects\VendingMachine\src\com\dustinbixler\AcceptCoin.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Dustin\IdeaProjects\VendingMachine\src\com\dustinbixler\AcceptCoinTester.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptor.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptorTests.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptorTests.java" />
     </list>
     <ignored path="VendingMachine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AcceptCoinTester.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java">
+      <file leaf-file-name="CoinAcceptorTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74561405">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.55263156">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AcceptCoin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/AcceptCoin.java">
+      <file leaf-file-name="CoinAcceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -79,6 +82,8 @@
         <option value="$PROJECT_DIR$/src/com/dustinbixler/Main.java" />
         <option value="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoin.java" />
         <option value="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java" />
+        <option value="$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptorTests.java" />
+        <option value="$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptor.java" />
       </list>
     </option>
   </component>
@@ -179,7 +184,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.AcceptCoinTester">
+  <component name="RunManager" selected="JUnit.CoinAcceptorTests">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.dustinbixler.Main" />
@@ -197,7 +202,7 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="AcceptCoinTester.testacceptnickle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CoinAcceptorTests.testacceptnickle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.dustinbixler.*" />
@@ -208,7 +213,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.dustinbixler" />
-      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.AcceptCoinTester" />
+      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.CoinAcceptorTests" />
       <option name="METHOD_NAME" value="testacceptnickle" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -223,7 +228,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="AcceptCoinTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CoinAcceptorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.dustinbixler.*" />
@@ -234,9 +239,61 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.dustinbixler" />
-      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.AcceptCoinTester" />
+      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.CoinAcceptorTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CoinAcceptorTests.testacceptdimes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dustinbixler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VendingMachine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dustinbixler" />
+      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.CoinAcceptorTests" />
+      <option name="METHOD_NAME" value="testacceptdimes" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CoinAcceptorTests.testrejectpennies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dustinbixler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VendingMachine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dustinbixler" />
+      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.CoinAcceptorTests" />
+      <option name="METHOD_NAME" value="testrejectpennies" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -375,15 +432,19 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AcceptCoinTester.testacceptnickle" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AcceptCoinTester" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests.testacceptnickle" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests.testacceptdimes" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests.testrejectpennies" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AcceptCoinTester" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AcceptCoinTester.testacceptnickle" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests.testacceptdimes" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests.testacceptnickle" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CoinAcceptorTests.testrejectpennies" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +459,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="485" y="39" width="1400" height="1000" extended-state="1" />
+    <frame x="485" y="39" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -409,7 +470,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -446,18 +507,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/AcceptCoin.java">
+    <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java">
+    <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/CoinAcceptorTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74561405">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.55263156">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

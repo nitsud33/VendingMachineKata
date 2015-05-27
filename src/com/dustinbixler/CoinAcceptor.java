@@ -3,8 +3,8 @@ package com.dustinbixler;
 /**
  * Created by Dustin on 5/26/2015.
  */
-public class AcceptCoin {
-    public boolean accept(String coin){
+public class CoinAcceptor {
+    public boolean isAccepted(String coin){
         if (coin.equals("Nickle")){
             return true;
         }
@@ -20,7 +20,6 @@ public class AcceptCoin {
         if (coin.equals("Dollar")){
             return true;
         }
-
         return false;
     }
 }
