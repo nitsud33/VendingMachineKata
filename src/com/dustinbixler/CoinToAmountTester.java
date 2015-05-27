@@ -15,4 +15,8 @@ public class CoinToAmountTester {
         CoinToAmount coinToAmount = new CoinToAmount();
         assertEquals(BigDecimal.valueOf(0.05), coinToAmount.amount("Nickle"));
     }
+    public void testNullInsert(){
+        CoinToAmount coinToAmount = new CoinToAmount();
+        assertEquals(BigDecimal.valueOf(0.0), coinToAmount.amount(""));
+    }
 }

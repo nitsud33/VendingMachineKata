@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925b745c-95a0-4802-8d5a-784489a2ce09" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/Transaction.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/Transaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/TransactionTester.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/TransactionTester.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/CoinToAmountTester.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/CoinToAmountTester.java" />
     </list>
     <ignored path="VendingMachine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,8 +74,8 @@
       <file leaf-file-name="CoinToAmountTester.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/CoinToAmountTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26842105">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.50701755">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -626,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/CoinToAmountTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26842105">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.50701755">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
