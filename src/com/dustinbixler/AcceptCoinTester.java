@@ -2,6 +2,7 @@ package com.dustinbixler;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
@@ -20,14 +21,18 @@ public class AcceptCoinTester {
     }
     public void testacceptquarters(){
         AcceptCoin acceptor = new AcceptCoin();
-        assertTrue("Acceptor accepts Dimes", acceptor.accept("Quarters"));
+        assertTrue("Acceptor accepts Quarters", acceptor.accept("Quarters"));
     }
     public void testaccepthalfdollars(){
         AcceptCoin acceptor = new AcceptCoin();
-        assertTrue("Acceptor accepts Dimes", acceptor.accept("HalfDollar"));
+        assertTrue("Acceptor accepts HalfDollars", acceptor.accept("HalfDollar"));
     }
     public void testacceptdollars(){
         AcceptCoin acceptor = new AcceptCoin();
-        assertTrue("Acceptor accepts Dimes", acceptor.accept("Dollar"));
+        assertTrue("Acceptor accepts Dollar", acceptor.accept("Dollar"));
+    }
+    public void testrejectpennies(){
+        AcceptCoin acceptor = new AcceptCoin();
+        assertFalse("Acceptor rejects Pennies", acceptor.accept("Penny"));
     }
 }

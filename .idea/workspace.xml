@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925b745c-95a0-4802-8d5a-784489a2ce09" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoin.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java" />
     </list>
     <ignored path="VendingMachine.iws" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="AcceptCoinTester.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28421053">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.74561405">
+              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,8 +77,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/dustinbixler/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java" />
         <option value="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoin.java" />
+        <option value="$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java" />
       </list>
     </option>
   </component>
@@ -457,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/AcceptCoinTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28421053">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.74561405">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
