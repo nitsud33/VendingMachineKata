@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 public class VendingMachine {
     private BigDecimal total = BigDecimal.valueOf(0.0);
     private BigDecimal coinreturn = BigDecimal.valueOf(0.0);
+    private boolean needsExactChange = false;
     private Integer colasRemaining = 1;
     private Integer chipsRemaining = 1;
     private Integer candyRemaining = 1;
@@ -26,7 +27,11 @@ public class VendingMachine {
     }
     public String readDisplay(){
         if (total.compareTo(BigDecimal.valueOf(0.0)) == 0) {
-            return "INSERT COIN";
+            if(needsExactChange){
+                return "EXACT CHANGE ONLY";
+            }else{
+                return "INSERT COIN";
+            }
         }
         return "$" + total.toString();
     }
@@ -79,5 +84,11 @@ public class VendingMachine {
     public BigDecimal getCoinReturn(){
         return coinreturn;
     }
+    public boolean isNeedsExactChange() {
+        return needsExactChange;
+    }
 
+    public void setNeedsExactChange(boolean needsExactChange) {
+        this.needsExactChange = needsExactChange;
+    }
 }

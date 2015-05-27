@@ -204,4 +204,10 @@ public class VendingMachineTester {
         assertEquals("SOLD OUT", vendingMachine.buyCandy());
         assertEquals("$1.15", vendingMachine.readDisplay());
     }
+    @Test
+    public void testExactChangeMessage() {
+        VendingMachine vendingMachine = new VendingMachine();
+        vendingMachine.setNeedsExactChange(true);
+        assertEquals("EXACT CHANGE ONLY", vendingMachine.readDisplay());
+    }
 }
