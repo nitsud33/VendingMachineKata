@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="925b745c-95a0-4802-8d5a-784489a2ce09" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Dustin\IdeaProjects\VendingMachine\src\com\dustinbixler\Transaction.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dustin\IdeaProjects\VendingMachine\src\com\dustinbixler\TransactionTester.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/VendingMachine.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/VendingMachine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/dustinbixler/VendingMachineTester.java" afterPath="$PROJECT_DIR$/src/com/dustinbixler/VendingMachineTester.java" />
     </list>
     <ignored path="VendingMachine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,8 +50,8 @@
       <file leaf-file-name="VendingMachineTester.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/VendingMachineTester.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5824561">
-              <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.32807016">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,12 +63,12 @@
         <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/VendingMachine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
               <folding>
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#1769#1770#0" expanded="true" />
-                <element signature="e#1802#1803#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#2363#2364#0" expanded="true" />
+                <element signature="e#2396#2397#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/com/dustinbixler/CoinToAmount.java" />
         <option value="$PROJECT_DIR$/src/com/dustinbixler/Transaction.java" />
         <option value="$PROJECT_DIR$/src/com/dustinbixler/TransactionTester.java" />
-        <option value="$PROJECT_DIR$/src/com/dustinbixler/VendingMachine.java" />
         <option value="$PROJECT_DIR$/src/com/dustinbixler/VendingMachineTester.java" />
+        <option value="$PROJECT_DIR$/src/com/dustinbixler/VendingMachine.java" />
       </list>
     </option>
   </component>
@@ -241,7 +241,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.VendingMachineTester.testReturnMoney">
+  <component name="RunManager">
     <configuration default="false" name="VendingMachineTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -256,32 +256,6 @@
       <option name="MAIN_CLASS_NAME" value="com.dustinbixler.VendingMachineTester" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="VendingMachineTester.testMakeChange3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.dustinbixler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="VendingMachine" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dustinbixler" />
-      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.VendingMachineTester" />
-      <option name="METHOD_NAME" value="testMakeChange3" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -320,32 +294,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="VendingMachineTester.testMakeChange1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.dustinbixler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="VendingMachine" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.dustinbixler" />
-      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.VendingMachineTester" />
-      <option name="METHOD_NAME" value="testMakeChange1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="VendingMachineTester.testReturnMoney" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -359,6 +307,58 @@
       <option name="PACKAGE_NAME" value="com.dustinbixler" />
       <option name="MAIN_CLASS_NAME" value="com.dustinbixler.VendingMachineTester" />
       <option name="METHOD_NAME" value="testReturnMoney" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="VendingMachineTester.testSoldOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dustinbixler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VendingMachine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dustinbixler" />
+      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.VendingMachineTester" />
+      <option name="METHOD_NAME" value="testSoldOut" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="VendingMachineTester.testSoldOutCandy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.dustinbixler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VendingMachine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.dustinbixler" />
+      <option name="MAIN_CLASS_NAME" value="com.dustinbixler.VendingMachineTester" />
+      <option name="METHOD_NAME" value="testSoldOutCandy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -500,18 +500,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.VendingMachineTester" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange3" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange2" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange1" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testReturnMoney" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange2" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testReturnMoney" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testSoldOut" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testSoldOutCandy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testReturnMoney" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.VendingMachineTester" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange2" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange1" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange3" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.VendingMachineTester" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testSoldOutCandy" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testSoldOut" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testReturnMoney" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VendingMachineTester.testMakeChange2" />
       </list>
     </recent_temporary>
   </component>
@@ -616,20 +616,20 @@
     <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/VendingMachine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
           <folding>
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#1769#1770#0" expanded="true" />
-            <element signature="e#1802#1803#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#2363#2364#0" expanded="true" />
+            <element signature="e#2396#2397#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dustinbixler/VendingMachineTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5824561">
-          <caret line="144" column="24" selection-start-line="144" selection-start-column="24" selection-end-line="144" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.32807016">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

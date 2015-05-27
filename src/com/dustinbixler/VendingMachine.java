@@ -8,6 +8,9 @@ import java.math.BigDecimal;
 public class VendingMachine {
     private BigDecimal total = BigDecimal.valueOf(0.0);
     private BigDecimal coinreturn = BigDecimal.valueOf(0.0);
+    private Integer colasRemaining = 1;
+    private Integer chipsRemaining = 1;
+    private Integer candyRemaining = 1;
 
     CoinAcceptor acceptor = new CoinAcceptor();
     CoinToAmount coinToAmount = new CoinToAmount();
@@ -28,29 +31,44 @@ public class VendingMachine {
         return "$" + total.toString();
     }
     public String buyCola(){
-        if(total.compareTo(BigDecimal.valueOf(1.00)) >= 0){
-            coinreturn = total.subtract(BigDecimal.valueOf(1.00));
-            total = BigDecimal.valueOf(0.0);
-            return "THANK YOU";
-        }else{
+          if(total.compareTo(BigDecimal.valueOf(1.00)) >= 0){
+              if (colasRemaining > 0){
+                  colasRemaining--;
+                  coinreturn = total.subtract(BigDecimal.valueOf(1.00));
+                  total = BigDecimal.valueOf(0.0);
+                  return "THANK YOU";
+              }else{
+                  return "SOLD OUT";
+              }
+         }else{
             return "$1.00";
         }
     }
     public String buyChips(){
         if(total.compareTo(BigDecimal.valueOf(.50)) >= 0){
-            coinreturn = total.subtract(BigDecimal.valueOf(.50));
-            total = BigDecimal.valueOf(0.0);
-            return "THANK YOU";
-        }else{
+            if (chipsRemaining > 0){
+                chipsRemaining--;
+                coinreturn = total.subtract(BigDecimal.valueOf(.50));
+                total = BigDecimal.valueOf(0.0);
+                return "THANK YOU";
+            }else{
+                return "SOLD OUT";
+            }
+          }else{
             return "$.50";
         }
     }
     public String buyCandy(){
         if(total.compareTo(BigDecimal.valueOf(.65)) >= 0){
-            coinreturn = total.subtract(BigDecimal.valueOf(.65));
-            total = BigDecimal.valueOf(0.0);
-            return "THANK YOU";
-        }else{
+            if(candyRemaining > 0){
+                candyRemaining--;
+                coinreturn = total.subtract(BigDecimal.valueOf(.65));
+                total = BigDecimal.valueOf(0.0);
+                return "THANK YOU";
+            }else{
+                return "SOLD OUT";
+            }
+         }else{
             return "$.65";
         }
     }

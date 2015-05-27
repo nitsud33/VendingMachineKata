@@ -151,4 +151,57 @@ public class VendingMachineTester {
         vendingMachine.returnMoney();
         assertEquals(BigDecimal.valueOf(0.45), vendingMachine.getCoinReturn());
     }
+    @Test
+    public void testSoldOutCola(){
+        VendingMachine vendingMachine = new VendingMachine();
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        assertEquals("THANK YOU", vendingMachine.buyCola());
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Dime");
+        vendingMachine.insert("Nickle");
+        assertEquals("SOLD OUT", vendingMachine.buyCola());
+        assertEquals("$1.15", vendingMachine.readDisplay());
+
+    }
+    @Test
+    public void testSoldOutChips(){
+        VendingMachine vendingMachine = new VendingMachine();
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        assertEquals("THANK YOU", vendingMachine.buyChips());
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Dime");
+        vendingMachine.insert("Nickle");
+        assertEquals("SOLD OUT", vendingMachine.buyChips());
+        assertEquals("$1.15", vendingMachine.readDisplay());
+
+    }
+    @Test
+    public void testSoldOutCandy(){
+        VendingMachine vendingMachine = new VendingMachine();
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        assertEquals("THANK YOU", vendingMachine.buyCandy());
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Dime");
+        vendingMachine.insert("Nickle");
+        assertEquals("SOLD OUT", vendingMachine.buyCandy());
+        assertEquals("$1.15", vendingMachine.readDisplay());
+    }
 }
