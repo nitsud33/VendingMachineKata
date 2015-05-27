@@ -33,5 +33,31 @@ public class TransactionTester {
         transaction.insert("Nickle");
         assertEquals("$0.10", transaction.getMessage());
     }
+    @Test
+    public void testDimeInserted(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Dime");
+        assertEquals("$0.10", transaction.getMessage());
+    }
+    @Test
+    public void testQuarterInserted(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Quarter");
+        assertEquals("$0.25", transaction.getMessage());
+    }
+    @Test
+    public void testRandomChangeInserted(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Quarter");
+        transaction.insert("Dime");
+        transaction.insert("Quarter");
+        transaction.insert("Dime");
+        transaction.insert("Nickle");
+        transaction.insert("Nickle");
+        transaction.insert("Penny");
+        transaction.insert("");
+        transaction.insert("Quarter");
+        assertEquals("$1.05", transaction.getMessage());
+    }
 
 }
