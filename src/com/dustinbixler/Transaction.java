@@ -5,9 +5,13 @@ package com.dustinbixler;
  */
 public class Transaction {
     private float total = 0;
+    CoinAcceptor acceptor = new CoinAcceptor();
+
 
     public void insert(String coin){
+        if(acceptor.isAccepted(coin)){
 
+        }
     }
     public String getMessage(){
         return "INSERT COIN";

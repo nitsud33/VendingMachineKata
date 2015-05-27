@@ -9,9 +9,16 @@ import static org.junit.Assert.assertEquals;
  */
 public class TransactionTester {
     @Test
-    public void testnocoinsinserted(){
+    public void testNoCoinsInserted(){
         Transaction transaction = new Transaction();
         transaction.insert(null);
         assertEquals("INSERT COIN", transaction.getMessage());
     }
+    @Test
+    public void testNickleInserted(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Nickle");
+        assertEquals("$0.05", transaction.getMessage());
+    }
+
 }
