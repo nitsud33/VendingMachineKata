@@ -26,8 +26,9 @@ public class Transaction {
         return "$" + total.toString();
     }
     public String buyCola(){
-        if(total.compareTo(BigDecimal.valueOf(1.00)) > 0){
-            return "$1.00";
+        if(total.compareTo(BigDecimal.valueOf(1.00)) >= 0){
+            total = BigDecimal.valueOf(0.0);
+            return "THANK YOU";
         }else{
             return "$1.00";
         }
