@@ -12,11 +12,15 @@ public class CoinToAmount {
 
     public CoinToAmount(){
         coinmap.put("Nickle", BigDecimal.valueOf(.05));
+        coinmap.put("Dime", BigDecimal.valueOf(.1));
+        coinmap.put("Quarter", BigDecimal.valueOf(.25));
+        coinmap.put("HalfDollar", BigDecimal.valueOf(.5));
+        coinmap.put("Dollar", BigDecimal.valueOf(1));
     }
     public BigDecimal amount(String coin){
         if(coinmap.containsKey(coin)){
             return coinmap.get(coin);
         }
-        return BigDecimal.valueOf(0);
+        return BigDecimal.valueOf(0.0);
     }
 }
