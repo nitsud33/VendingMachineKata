@@ -5,14 +5,14 @@ import java.math.BigDecimal;
 /**
  * Created by Dustin on 5/26/2015.
  */
-public class Transaction {
+public class VendingMachine {
     private BigDecimal total = BigDecimal.valueOf(0.0);
     private BigDecimal coinreturn = BigDecimal.valueOf(0.0);
 
     CoinAcceptor acceptor = new CoinAcceptor();
     CoinToAmount coinToAmount = new CoinToAmount();
 
-    public Transaction() {
+    public VendingMachine() {
         total = total.setScale(2);
     }
 
@@ -21,7 +21,7 @@ public class Transaction {
             total = total.add(coinToAmount.amount(coin));
         }
     }
-    public String getMessage(){
+    public String readDisplay(){
         if (total.compareTo(BigDecimal.valueOf(0.0)) == 0) {
             return "INSERT COIN";
         }
@@ -53,6 +53,10 @@ public class Transaction {
         }else{
             return "$.65";
         }
+    }
+    public void returnMoney(){
+        coinreturn = total;
+        total = BigDecimal.valueOf(0.0);
     }
     public BigDecimal getCoinReturn(){
         return coinreturn;
