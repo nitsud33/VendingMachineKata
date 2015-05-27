@@ -17,7 +17,7 @@ public class VendingMachineTester {
         assertEquals("INSERT COIN", vendingMachine.readDisplay());
     }
     @Test
-    public void testNoCoinsInserted2(){
+    public void testNoCoinsInserted(){
         VendingMachine vendingMachine = new VendingMachine();
         vendingMachine.insert("");
         assertEquals("INSERT COIN", vendingMachine.readDisplay());
@@ -50,15 +50,7 @@ public class VendingMachineTester {
     @Test
     public void testRandomChangeInserted(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Dime");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Dime");
-        vendingMachine.insert("Nickle");
-        vendingMachine.insert("Nickle");
-        vendingMachine.insert("Penny");
-        vendingMachine.insert("");
-        vendingMachine.insert("Quarter");
+        insertRandomChange(vendingMachine);
         assertEquals("$1.05", vendingMachine.readDisplay());
     }
     @Test
@@ -70,10 +62,7 @@ public class VendingMachineTester {
     @Test
     public void testBuyColaWithMoney(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         assertEquals("THANK YOU", vendingMachine.buyCola());
         assertEquals("INSERT COIN", vendingMachine.readDisplay());
     }
@@ -86,10 +75,7 @@ public class VendingMachineTester {
     @Test
     public void testBuyChipsWithMoney(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         assertEquals("THANK YOU", vendingMachine.buyChips());
         assertEquals("INSERT COIN", vendingMachine.readDisplay());
     }
@@ -102,23 +88,18 @@ public class VendingMachineTester {
     @Test
     public void testBuyCandyWithMoney(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         assertEquals("THANK YOU", vendingMachine.buyCandy());
         assertEquals("INSERT COIN", vendingMachine.readDisplay());
     }
     @Test
     public void testMakeChange1(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         vendingMachine.buyCandy();
         assertEquals(BigDecimal.valueOf(0.35), vendingMachine.getCoinReturn());
     }
+
     @Test
     public void testMakeChange2(){
         VendingMachine vendingMachine = new VendingMachine();
@@ -132,10 +113,7 @@ public class VendingMachineTester {
     @Test
     public void testMakeChange3(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         vendingMachine.insert("Dime");
         vendingMachine.insert("Nickle");
         vendingMachine.buyCola();
@@ -154,15 +132,9 @@ public class VendingMachineTester {
     @Test
     public void testSoldOutCola(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         assertEquals("THANK YOU", vendingMachine.buyCola());
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         vendingMachine.insert("Dime");
         vendingMachine.insert("Nickle");
         assertEquals("SOLD OUT", vendingMachine.buyCola());
@@ -172,15 +144,9 @@ public class VendingMachineTester {
     @Test
     public void testSoldOutChips(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         assertEquals("THANK YOU", vendingMachine.buyChips());
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         vendingMachine.insert("Dime");
         vendingMachine.insert("Nickle");
         assertEquals("SOLD OUT", vendingMachine.buyChips());
@@ -190,15 +156,9 @@ public class VendingMachineTester {
     @Test
     public void testSoldOutCandy(){
         VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         assertEquals("THANK YOU", vendingMachine.buyCandy());
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
-        vendingMachine.insert("Quarter");
+        insertADollar(vendingMachine);
         vendingMachine.insert("Dime");
         vendingMachine.insert("Nickle");
         assertEquals("SOLD OUT", vendingMachine.buyCandy());
@@ -209,5 +169,22 @@ public class VendingMachineTester {
         VendingMachine vendingMachine = new VendingMachine();
         vendingMachine.setNeedsExactChange(true);
         assertEquals("EXACT CHANGE ONLY", vendingMachine.readDisplay());
+    }
+    public void insertRandomChange(VendingMachine vendingMachine){
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Dime");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Dime");
+        vendingMachine.insert("Nickle");
+        vendingMachine.insert("Nickle");
+        vendingMachine.insert("Penny");
+        vendingMachine.insert("");
+        vendingMachine.insert("Quarter");
+    }
+    public void insertADollar(VendingMachine vendingMachine) {
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
+        vendingMachine.insert("Quarter");
     }
 }
