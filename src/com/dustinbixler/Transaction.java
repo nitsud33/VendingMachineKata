@@ -12,10 +12,14 @@ public class Transaction {
 
     public void insert(String coin){
         if(acceptor.isAccepted(coin)){
-
+            total = total.add(coinToAmount.amount(coin));
         }
     }
     public String getMessage(){
-        return "INSERT COIN";
+        if (total.compareTo(BigDecimal.valueOf(0.0)) == 0) {
+            return "INSERT COIN";
+        }
+
+        return "$" + total.toString();
     }
 }

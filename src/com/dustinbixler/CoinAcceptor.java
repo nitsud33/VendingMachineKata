@@ -5,6 +5,9 @@ package com.dustinbixler;
  */
 public class CoinAcceptor {
     public boolean isAccepted(String coin){
+        if (coin == null){
+            return false;
+        }
         if (coin.equals("Nickle")){
             return true;
         }
