@@ -75,5 +75,37 @@ public class TransactionTester {
         assertEquals("THANK YOU", transaction.buyCola());
         assertEquals("INSERT COIN", transaction.getMessage());
     }
+    @Test
+    public void testBuyChips(){
+        Transaction transaction = new Transaction();
+        assertEquals("$.50", transaction.buyChips());
+        assertEquals("INSERT COIN", transaction.getMessage());
+    }
+    @Test
+    public void testBuyChipsWithMoney(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        assertEquals("THANK YOU", transaction.buyChips());
+        assertEquals("INSERT COIN", transaction.getMessage());
+    }
+    @Test
+    public void testBuyCandy(){
+        Transaction transaction = new Transaction();
+        assertEquals("$.65", transaction.buyCandy());
+        assertEquals("INSERT COIN", transaction.getMessage());
+    }
+    @Test
+    public void testBuyCandyWithMoney(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        assertEquals("THANK YOU", transaction.buyCandy());
+        assertEquals("INSERT COIN", transaction.getMessage());
+    }
 
 }

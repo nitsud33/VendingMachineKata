@@ -33,4 +33,20 @@ public class Transaction {
             return "$1.00";
         }
     }
+    public String buyChips(){
+        if(total.compareTo(BigDecimal.valueOf(.50)) >= 0){
+            total = BigDecimal.valueOf(0.0);
+            return "THANK YOU";
+        }else{
+            return "$.50";
+        }
+    }
+    public String buyCandy(){
+        if(total.compareTo(BigDecimal.valueOf(.65)) >= 0){
+            total = BigDecimal.valueOf(0.0);
+            return "THANK YOU";
+        }else{
+            return "$.65";
+        }
+    }
 }
