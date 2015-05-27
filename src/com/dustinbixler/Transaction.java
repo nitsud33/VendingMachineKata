@@ -7,6 +7,8 @@ import java.math.BigDecimal;
  */
 public class Transaction {
     private BigDecimal total = BigDecimal.valueOf(0.0);
+    private BigDecimal coinreturn = BigDecimal.valueOf(0.0);
+
     CoinAcceptor acceptor = new CoinAcceptor();
     CoinToAmount coinToAmount = new CoinToAmount();
 
@@ -27,6 +29,7 @@ public class Transaction {
     }
     public String buyCola(){
         if(total.compareTo(BigDecimal.valueOf(1.00)) >= 0){
+            coinreturn = total.subtract(BigDecimal.valueOf(1.00));
             total = BigDecimal.valueOf(0.0);
             return "THANK YOU";
         }else{
@@ -35,6 +38,7 @@ public class Transaction {
     }
     public String buyChips(){
         if(total.compareTo(BigDecimal.valueOf(.50)) >= 0){
+            coinreturn = total.subtract(BigDecimal.valueOf(.50));
             total = BigDecimal.valueOf(0.0);
             return "THANK YOU";
         }else{
@@ -43,10 +47,15 @@ public class Transaction {
     }
     public String buyCandy(){
         if(total.compareTo(BigDecimal.valueOf(.65)) >= 0){
+            coinreturn = total.subtract(BigDecimal.valueOf(.65));
             total = BigDecimal.valueOf(0.0);
             return "THANK YOU";
         }else{
             return "$.65";
         }
     }
+    public BigDecimal getCoinReturn(){
+        return coinreturn;
+    }
+
 }

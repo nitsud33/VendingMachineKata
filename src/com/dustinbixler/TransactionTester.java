@@ -2,6 +2,8 @@ package com.dustinbixler;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
+
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -107,5 +109,36 @@ public class TransactionTester {
         assertEquals("THANK YOU", transaction.buyCandy());
         assertEquals("INSERT COIN", transaction.getMessage());
     }
-
+    @Test
+    public void testMakeChange1(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.buyCandy();
+        assertEquals(BigDecimal.valueOf(0.35), transaction.getCoinReturn());
+    }
+    @Test
+    public void testMakeChange2(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Dime");
+        transaction.buyChips();
+        assertEquals(BigDecimal.valueOf(0.35), transaction.getCoinReturn());
+    }
+    @Test
+    public void testMakeChange3(){
+        Transaction transaction = new Transaction();
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Quarter");
+        transaction.insert("Dime");
+        transaction.insert("Nickle");
+        transaction.buyCola();
+        assertEquals(BigDecimal.valueOf(0.15), transaction.getCoinReturn());
+    }
 }
