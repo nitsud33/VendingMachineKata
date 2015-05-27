@@ -59,5 +59,11 @@ public class TransactionTester {
         transaction.insert("Quarter");
         assertEquals("$1.05", transaction.getMessage());
     }
+    @Test
+    public void testBuyCola(){
+        Transaction transaction = new Transaction();
+        assertEquals("$1.00", transaction.buyCola());
+        assertEquals("INSERT COIN", transaction.getMessage());
+    }
 
 }

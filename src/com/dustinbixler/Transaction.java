@@ -25,4 +25,11 @@ public class Transaction {
         }
         return "$" + total.toString();
     }
+    public String buyCola(){
+        if(total.compareTo(BigDecimal.valueOf(1.00)) > 0){
+            return "$1.00";
+        }else{
+            return "$1.00";
+        }
+    }
 }
