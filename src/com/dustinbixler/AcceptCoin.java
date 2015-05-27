@@ -11,6 +11,15 @@ public class AcceptCoin {
         if (coin.equals("Dime")){
             return true;
         }
+        if (coin.equals("Quarter")){
+            return true;
+        }
+        if (coin.equals("HalfDollar")){
+            return true;
+        }
+        if (coin.equals("Dollar")){
+            return true;
+        }
 
         return false;
     }
